@@ -1,7 +1,7 @@
 import axios from "axios";
 import FormData from "form-data"
 
-const BASE_URL = process.env.API_URL || "http://localhost:3001/api";
+const BASE_URL = process.env.REACT_APP_API_URL || "http://localhost:3001/api";
 
 export const http = axios.create({
   baseURL: BASE_URL,
