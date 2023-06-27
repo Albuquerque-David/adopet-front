@@ -5,11 +5,10 @@ const BASE_URL = process.env.REACT_APP_API_URL || "http://localhost:3001/api";
 
 export const http = axios.create({
   baseURL: BASE_URL,
-  withCredentials: true,
   headers: {
-    "Access-Control-Allow-Origin": "*",
-    "Access-Control-Allow-Headers": "Authorization", 
-    "Access-Control-Allow-Methods": "GET, POST, OPTIONS, PUT, PATCH, DELETE" ,
+    headers: {
+      "Content-Type": "application/json"
+    }
   }
 });
 
